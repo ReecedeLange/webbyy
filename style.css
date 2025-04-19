@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: white;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+.dropbtn {
+    background-color: pink;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 160px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f59ac2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section {
+    margin-top: 20px;
+    display: none;
+    border: 3px solid pink;
+    border-radius: 12px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgba(255, 192, 203, 0.1); /* soft pink tint */
+}
+
+.section.active {
+    display: block;
+}
+
+.travel-list {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-list li {
+    margin: 10px 0;
+}
+
+.travel-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.travel-list a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling for the "Why I Love You" section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(255, 192, 203, 0.2);
+    border: 2px solid pink;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid pink;
+    padding: 12px 15px;
+    text-align: left;
+    color: white;
+}
+
+th {
+    background-color: pink;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 192, 203, 0.2);
+}
+
+tr:hover {
+    background-color: rgba(255, 105, 180, 0.3);
+}
+
+/* Slider Style */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 3px solid pink;
+    border-radius: 12px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #f59ac2;
+}
